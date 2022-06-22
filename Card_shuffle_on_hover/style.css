@@ -1,0 +1,30 @@
+section {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+section div {
+    height: 200px;
+    font-size: 80px;
+    background: rgb(32, 32, 160);
+    color: white;
+    padding: 30px;
+    border-radius: 14px;
+    min-width: 250px;
+    box-shadow: 12px 0px 32px -12px black;
+    margin-left: -130px;
+    transition: all 0.25s ease-in;
+    cursor: pointer;
+}
+
+section div:hover {
+    transform:  translate(16px) rotate(3deg);
+}
+
+section div:hover ~ div {
+    transform: translateX(130px);
+}
